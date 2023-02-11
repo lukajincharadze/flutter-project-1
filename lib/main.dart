@@ -17,28 +17,29 @@ class MyApp extends StatelessWidget {
       ), // ThemeData
       home: Scaffold (
         appBar: AppBar (title: Text("Cubes"),),
-        body: Container(
-            child: Column (
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.yellow,
-                  alignment: AlignmentDirectional.bottomEnd,
-                )
-              ],
-            ),
+        body: Center(
+          child: Container(
+              child: Column (
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  )
+                ],
+              ),
+          ),
         ),
       ),
     );
