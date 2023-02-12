@@ -15,30 +15,44 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ), // ThemeData
-      home: Scaffold (
-        appBar: AppBar (title: Text("Cubes"),),
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text("Cubes"),
+          ),
           body: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.red,
+              Column(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: 100,
+                    width: 100,
+                  ),
+                ],
               ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.green,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.green,
+                    height: 100,
+                    width: 100,
+                  ),
+                ],
               ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellow,
-              )
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    color: Colors.yellow,
+                    height: 100,
+                    width: 100,
+                  ),
+                ],
+              ),
             ],
-          ),
-      ),
+          )),
     );
   }
 }
-
